@@ -5,7 +5,7 @@ import ProductCard from './ProductCard';
 
 export default function ProductList() {
     return(
-        <FlatList 
+        <FlatList
             data={products}
             keyExtractor={(product) => product.id}
             renderItem={({ item }) => <ProductCard {...item} />}
