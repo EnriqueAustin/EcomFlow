@@ -9,8 +9,7 @@ export default function App() {
   return (
     <SafeAreaView className="flex-1 items-center justify-center bg-gray-200 dark:bg-black">
       <View 
-        className='flex-row w-full gap-5' 
-        style={{ alignItems: 'center' }} 
+        className='flex-row w-full gap-5 items-center' 
       >
         <Text className='text-2xl font-bold dark:text-white' >
           New collection
