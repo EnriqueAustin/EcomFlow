@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { AntDesign } from "@expo/vector-icons";
 import { useColorScheme } from 'nativewind';
 
@@ -43,7 +43,10 @@ export default function ProductCard({
                     <Text className='text-2xl font-extrabold dark:text-white' >R {price * count}</Text>
                     
                 </View>
-                <Text>{description}</Text>
+                <Text className='text-sm text-black/60 dark:text-white/70' >{description}</Text>
+                <TouchableOpacity className='flex-row justify-center w-10/12 self-center mt-5 bg-black dark:bg-white p-3 rounded-full' >
+                    <Text className='text-white dark:text-black font-bold'>Add To Cart</Text>
+                </TouchableOpacity>
             </View>
         </View>
     );
